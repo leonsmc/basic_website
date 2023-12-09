@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: RGB(210, 210, 255);
+}
+
+nav {
+    background-color: #ab6868;
+    color: white;
+}
+
+header {
+    background-color: #eee;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Navigationsbar: */
+nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(128, 0, 128);
+}
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: RGB(153, 51, 153);
+}
+
+nav .shopping-cart {
+    float: right;
+}
+
+nav .shopping-cart a {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Produktblöcke: */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.product {
+    width: 400px;
+    height: 270px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h3, .product p {
+    margin: 10px 0;
+}
+
+/*About us CSS*/
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-block {
+    max-width: 1100px;
+    margin: 0;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 840px) {
+    .content-block {
+        width: auto;
+        padding: 20px;
+    }
+}
+
+/*Galerie (bestseller.html)*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.gallery-item {
+    flex: 1 0 210px;
+    margin: 10px;
+    max-width: 460px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: 100%;
+    }
+}
+
